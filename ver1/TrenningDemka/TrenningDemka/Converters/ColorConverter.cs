@@ -1,0 +1,30 @@
+﻿using Avalonia.Data.Converters;
+using Avalonia.Media;
+using System;
+using System.Collections.Generic;
+using System.Globalization;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace TrenningDemka.Converters
+{
+    public class ColorConverter : IValueConverter
+    {
+        public object? Convert(object? value, Type targetType, object? parameter, CultureInfo culture)
+        {
+            if (value is int count && count <= 3) {
+                return new SolidColorBrush(uint.Parse("FFF08080", NumberStyles.HexNumber));
+            }
+            else
+            {
+                return null;
+            }
+        }
+
+        public object? ConvertBack(object? value, Type targetType, object? parameter, CultureInfo culture)
+        {
+            throw new NotImplementedException();
+        }
+    }
+}

@@ -1,0 +1,78 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="using:TrenningDemka.ViewModels"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="TrenningDemka.Views.MainWindow"
+        x:DataType="vm:MainWindowViewModel"
+        Icon="/Assets/avalonia-logo.ico"
+        Title="TrenningDemka">
+
+    <Design.DataContext>
+        <vm:MainWindowViewModel/>
+    </Design.DataContext>
+
+    <Panel>
+        
+   
+    <ContentControl Content="{Binding CurrentPage}"
+                        IsVisible="{Binding IsLoginPage}"
+                        HorizontalAlignment="Stretch"
+                        VerticalAlignment="Stretch"
+                        HorizontalContentAlignment="Stretch"
+                        VerticalContentAlignment="Stretch"></ContentControl>
+
+    <Grid RowDefinitions="Auto,*" IsVisible="{Binding !IsLoginPage}">
+        
+    <Border Grid.Row="0"
+        BorderBrush="#666"
+        BorderThickness="1"
+        Background="LightBlue">
+        <Grid ColumnDefinitions="*,*,*">
+            <TextBlock Text="{Binding Username}" Grid.Column="0"></TextBlock>
+            <StackPanel Grid.Column="1" Background="LightBlue">
+                <TextBlock Text="ChudoObuv"
+                FontSize="16"
+                FontWeight="SemiBold"
+                Padding="10, 5"
+                HorizontalAlignment="Center"/>
+            </StackPanel>
+            <Button Grid.Column="2" Content="LogIn" Command="{Binding GoToLogInCommand}"></Button>
+        </Grid>
+        
+    </Border>
+        
+      
+        
+       
+        <Grid Grid.Row="1" ColumnDefinitions="Auto,*">
+            <StackPanel Background="LightBlue" Spacing="10">
+                <TextBlock Text="Actions" 
+                    Foreground="Black"
+                    FontSize="15"
+                    HorizontalAlignment="Center"
+                    Padding="10, 5"/>
+                <Button HorizontalAlignment="Stretch" Command="{Binding GoToData1Command}">
+                    <TextBlock Text="Products catalog" HorizontalAlignment="Center"/>
+                </Button>
+                <Button HorizontalAlignment="Stretch">
+                    <TextBlock Text="Orders" HorizontalAlignment="Center"/>
+                </Button>
+            </StackPanel>
+
+            <ContentControl Grid.Column="1"
+                Content="{Binding CurrentPage}"
+                HorizontalAlignment="Stretch"
+                VerticalAlignment="Stretch"
+                HorizontalContentAlignment="Stretch"
+                VerticalContentAlignment="Stretch">  
+            </ContentControl>
+                  
+         
+            </Grid>
+    </Grid>
+
+     </Panel>
+
+</Window>

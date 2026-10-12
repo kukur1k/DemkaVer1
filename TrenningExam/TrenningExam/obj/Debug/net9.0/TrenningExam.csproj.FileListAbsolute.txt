@@ -1,0 +1,2 @@
+C:\файлы и прочее\DemoExTrenning\TrenningExam\TrenningExam\obj\Debug\net9.0\TrenningExam.csproj.AssemblyReference.cache
+C:\файлы и прочее\DemoExTrenning\TrenningExam\TrenningExam\obj\Debug\net9.0\Avalonia\Resources.Inputs.cache

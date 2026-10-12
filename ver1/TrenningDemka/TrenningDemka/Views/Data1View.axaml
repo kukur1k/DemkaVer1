@@ -1,0 +1,116 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="TrenningDemka.Views.Data1View"
+             xmlns:vm="using:TrenningDemka.ViewModels"
+             x:DataType="vm:Data1ViewModel"
+             xmlns:converters="using:TrenningDemka.Converters"
+             Tag="Каталог товаров">
+
+
+    
+
+    <UserControl.Resources>
+        <converters:ImageConvert x:Key="ImgConv"/>
+        <converters:ColorConverter x:Key="ColorConv"/>
+    </UserControl.Resources>
+
+    <Grid RowDefinitions="Auto,Auto, *">
+        <TextBlock Grid.Row="0" Text="{Binding PageTitle}"
+                FontSize="16"
+                FontWeight="SemiBold"
+                Padding="10, 5"
+                HorizontalAlignment="Center"/>
+        <StackPanel Orientation="Horizontal" Grid.Row="1" Spacing="10">
+            <ComboBox Width="180" ItemsSource="{Binding SortedTypes}" SelectedItem="{Binding SelectedOrder}"/>
+            <ComboBox Width="180" ItemsSource="{Binding Categories}" SelectedItem="{Binding SelectedCategory}"/>
+            <TextBox Watermark="name or desc" Width="150" Text="{Binding SearchStr}"></TextBox>
+            <Button Command="{Binding CleanFiltersCommand}"><TextBlock Text="Clean filters"/></Button>
+            
+        </StackPanel>
+    <ScrollViewer Grid.Row="2">
+        <ItemsControl ItemsSource="{Binding Products}">
+        <ItemsControl.ItemTemplate>
+            <DataTemplate>
+            <Border BorderBrush="#666"
+            Background="{Binding MyTotalQuantity, Converter={StaticResource ColorConv}}"
+            BorderThickness="1"
+            Padding="5">
+            <Grid ColumnDefinitions="120,*">
+                <Image Source="{Binding Image, Converter={StaticResource ImgConv}}"
+                        Grid.Column="0"
+                        Height="100"
+                        Width="100"/>
+                <Grid Grid.Column="1" RowDefinitions="30,*">
+                    <StackPanel Orientation="Horizontal"
+                    VerticalAlignment="Center"
+                    HorizontalAlignment="Center"
+                    Grid.Row="0">
+                        <TextBlock Text="{Binding Manufacture.Manufacture}"
+                            Foreground="Black"/>
+                        <TextBlock Text=" | " Padding="10 5" Foreground="Black"/>
+                        <TextBlock Text="{Binding Name}"
+                            Foreground="Black"/>
+                    </StackPanel>
+                    <StackPanel Grid.Row="1" Orientation="Horizontal" Spacing="100">
+                        <StackPanel Spacing="3" HorizontalAlignment="Left">
+                            <TextBlock Text="{Binding Category.Category1}"
+                            Foreground="Black"
+                            Padding="0 20 0 0"/>
+
+                            <StackPanel Orientation="Horizontal" Spacing="10">
+                                <TextBlock Text="{Binding MyTotalQuantity}"
+                                Foreground="Black"/>
+                                <TextBlock Text="{Binding QuantityString}"
+                                Foreground="Black"/>
+                            </StackPanel>
+                            
+                            <TextBlock Text="{Binding Structure}"
+                            Width="400"
+                            TextWrapping="Wrap"
+                            Foreground="Black"/>
+                        </StackPanel>
+                        <StackPanel Spacing="10" HorizontalAlignment="Right">
+                            <TextBlock VerticalAlignment="Center"
+                                FontSize="16"
+                                FontWeight="SemiBold"
+                                TextDecorations="Strikethrough"
+                                Foreground="Gray"
+                                IsVisible="{Binding HasDiscount}"
+                                Text="{Binding Cost}" Padding="0 20 0 0"/>
+                            <TextBlock VerticalAlignment="Center"
+                                FontSize="16"
+                                FontWeight="SemiBold"
+                                Foreground="Red"
+                                IsVisible="{Binding HasDiscount}"
+                                Text="{Binding NewCost}" Padding="0 20 0 0"/>
+                            <TextBlock VerticalAlignment="Center"
+                                FontSize="16"
+                                FontWeight="SemiBold"
+                                Foreground="Black"
+                                IsVisible="{Binding !HasDiscount}"
+                                Text="{Binding Cost}" Padding="0 20 0 0"/>
+                            <Button Content="Buy"
+                                    Command="{Binding $parent[UserControl].DataContext.GoToOrderCommand}"
+                                    CommandParameter="{Binding}"></Button>
+                        </StackPanel>
+                    </StackPanel>
+                    
+                </Grid>
+                
+            </Grid>
+            
+                
+            </Border>
+        </DataTemplate>
+        </ItemsControl.ItemTemplate>
+        
+    </ItemsControl>
+    </ScrollViewer>
+    </Grid>
+    
+    
+
+</UserControl>
