@@ -154,3 +154,4 @@ C:\файлы и прочее\DemoExTrenning\ver1\TrenningDemka\TrenningDemka\bi
 C:\файлы и прочее\DemoExTrenning\ver1\TrenningDemka\TrenningDemka\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\файлы и прочее\DemoExTrenning\ver1\TrenningDemka\TrenningDemka\bin\Debug\net8.0\Npgsql.dll
 C:\файлы и прочее\DemoExTrenning\ver1\TrenningDemka\TrenningDemka\bin\Debug\net8.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+C:\файлы и прочее\DemoExTrenning\ver1\TrenningDemka\TrenningDemka\obj\Debug\net8.0\TrenningDemka.sourcelink.json

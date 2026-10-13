@@ -5,11 +5,85 @@
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
         x:Class="TrenningDemka.Views.OrderDetailsView"
         xmlns:vm="using:TrenningDemka.ViewModels"
-        x:DataType="vm:OrderDetailsViewModel">
+        x:DataType="vm:OrderDetailsViewModel"
+        xmlns:converters="using:TrenningDemka.Converters">
 
 
+        
+    <UserControl.Resources>
+        <converters:ImageConvert x:Key="ImgConv"/>
+    </UserControl.Resources>
 
-        <StackPanel>
-            <TextBlock Text="{Binding ThisProduct.Name}"></TextBlock>
-        </StackPanel>
+        <Grid ColumnDefinitions="*,*">
+            <StackPanel Grid.Column="0">
+                <TextBlock TextWrapping="Wrap" Padding="15" Text="{Binding ThisProduct.Name}" 
+                HorizontalAlignment="Center"
+                FontWeight="Bold"
+                FontSize="16"></TextBlock>
+                <Border Padding="15">
+                    <StackPanel Spacing="10">
+                        <TextBlock Text="Description:" FontWeight="SemiBold"></TextBlock>
+                        <TextBlock TextWrapping="Wrap" Text="{Binding ThisProduct.Description}"></TextBlock>
+                        <TextBlock Text="Structure:" FontWeight="SemiBold"></TextBlock>
+                        <TextBlock TextWrapping="Wrap" Text="{Binding ThisProduct.Structure}"></TextBlock>
+                        <TextBlock Padding="10"
+                            HorizontalAlignment="Center"
+                            Text="{Binding ThisProduct.NewCost}" 
+                            FontWeight="Bold"
+                            FontSize="20"></TextBlock>
+                    </StackPanel>
+                </Border>
+                
+                <Border Padding="10">
+                    <StackPanel>
+                        <StackPanel Orientation="Horizontal" Spacing="5">
+                        <TextBlock Text="Selected size: " Padding="10"></TextBlock>
+                        <TextBlock Text="{Binding SelectedSize.size}" Padding="10"></TextBlock>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" Spacing="10">
+                        <ComboBox ItemsSource="{Binding Sizes}" Width="240" SelectedItem="{Binding SelectedSize}">
+                                <ComboBox.ItemTemplate>
+                                    <DataTemplate>
+                                        <StackPanel Orientation="Horizontal" Spacing="5">
+                                            <TextBlock Text="Size: "></TextBlock>
+                                            <TextBlock Text="{Binding size}"></TextBlock>
+                                            <TextBlock Text="allow count: "></TextBlock>
+                                            <TextBlock Text="{Binding quantity}"></TextBlock>
+                                        </StackPanel>
+                                    </DataTemplate>
+                                </ComboBox.ItemTemplate>
+                            </ComboBox>
+                            <Button Background="Purple">
+                                <TextBlock Text="Order" HorizontalAlignment="Center"
+                                VerticalAlignment="Center"
+                                FontSize="16"
+                                FontWeight="Bold"
+                                Foreground="White"></TextBlock>
+                            </Button>
+                        </StackPanel>
+                    </StackPanel>
+                        
+                    
+                </Border>
+                
+            
+                
+             </StackPanel>
+
+
+               <StackPanel Spacing="20" Grid.Column="1">
+               <Border BorderBrush="#666" BorderThickness="1">
+                    <Image 
+                        Source="{Binding ThisProduct.Image,
+                        Converter={StaticResource ImgConv}}"
+                        Height="250"
+                        Width="250"/>
+               </Border>
+                    
+            </StackPanel>
+        </Grid>
+
+
+        
+        
 </UserControl>
