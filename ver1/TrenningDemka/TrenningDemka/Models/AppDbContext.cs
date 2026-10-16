@@ -71,7 +71,7 @@ public partial class AppDbContext : DbContext
 
             entity.ToTable("orders", "Demka");
 
-            entity.Property(e => e.Id).HasColumnName("id");
+            entity.Property(e => e.Id).HasColumnName("id").ValueGeneratedOnAdd();
             entity.Property(e => e.Date).HasColumnName("date");
             entity.Property(e => e.UserId).HasColumnName("user_id");
 

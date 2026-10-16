@@ -36,6 +36,7 @@ namespace TrenningDemka.ViewModels
                 .Include(p => p.Category)
                 .Include(p => p.Manufacture)
                 .Include(p => p.StockItems)
+                .Include(p => p.OrdersProducts)
                 .ToList();
 
             Products = new ObservableCollection<Product>(productsList);

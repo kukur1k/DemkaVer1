@@ -53,7 +53,16 @@
                                     </DataTemplate>
                                 </ComboBox.ItemTemplate>
                             </ComboBox>
-                            <Button Background="Purple">
+
+                            <NumericUpDown Grid.Column="1"
+                                   Value="{Binding SelectedCount}"
+                                   Minimum="1"
+                                   Maximum="{Binding SelectedSize.quantity}"
+                                   Increment="1"
+                                   FormatString="0"
+                                   Width="120" />
+
+                            <Button Background="Purple" Command="{Binding MakeOrderCommand}">
                                 <TextBlock Text="Order" HorizontalAlignment="Center"
                                 VerticalAlignment="Center"
                                 FontSize="16"

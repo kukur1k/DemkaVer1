@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TrenningDemka")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+19c663b52cbfb47d8e6b54f9ed265b0b3503923d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+09b29235312caa55a608e8e446140dd1ade59915")]
 [assembly: System.Reflection.AssemblyProductAttribute("TrenningDemka")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TrenningDemka")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

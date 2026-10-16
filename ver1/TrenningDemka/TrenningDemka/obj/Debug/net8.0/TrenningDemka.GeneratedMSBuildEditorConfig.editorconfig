@@ -24,6 +24,9 @@ build_property.EnableCodeStyleSeverity =
 [C:/файлы и прочее/DemoExTrenning/ver1/TrenningDemka/TrenningDemka/App.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
+[C:/файлы и прочее/DemoExTrenning/ver1/TrenningDemka/TrenningDemka/Views/BasketView.axaml]
+build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
+
 [C:/файлы и прочее/DemoExTrenning/ver1/TrenningDemka/TrenningDemka/Views/Data1View.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 

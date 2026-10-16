@@ -40,6 +40,9 @@
     <Compile Update="Views\Data1View.axaml.cs">
       <DependentUpon>Data1View.axaml</DependentUpon>
     </Compile>
+    <Compile Update="Views\BasketView.axaml.cs">
+      <DependentUpon>BasketView.axaml</DependentUpon>
+    </Compile>
     <Compile Update="Views\OrderDetailsView.axaml.cs">
       <DependentUpon>OrderDetailsView.axaml</DependentUpon>
     </Compile>

@@ -38,7 +38,12 @@
                 Padding="10, 5"
                 HorizontalAlignment="Center"/>
             </StackPanel>
-            <Button Grid.Column="2" Content="LogIn" Command="{Binding GoToLogInCommand}"></Button>
+            <StackPanel Grid.Column="2">
+                <Button  Content="LogIn" Command="{Binding GoToLogInCommand}"></Button>
+                <TextBlock Text="{Binding Busket.Count, StringFormat='Products in busket {0}'}"></TextBlock>
+                <Button Content="Basket" Command="{Binding GoToBasketCommand}"></Button>
+            </StackPanel>
+            
         </Grid>
         
     </Border>
@@ -76,3 +81,4 @@
      </Panel>
 
 </Window>
+
