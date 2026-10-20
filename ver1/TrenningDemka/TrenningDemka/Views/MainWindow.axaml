@@ -61,7 +61,7 @@
                 <Button HorizontalAlignment="Stretch" Command="{Binding GoToData1Command}">
                     <TextBlock Text="Products catalog" HorizontalAlignment="Center"/>
                 </Button>
-                <Button HorizontalAlignment="Stretch">
+                <Button HorizontalAlignment="Stretch" Command="{Binding GoToOrdersCommand}">
                     <TextBlock Text="Orders" HorizontalAlignment="Center"/>
                 </Button>
             </StackPanel>

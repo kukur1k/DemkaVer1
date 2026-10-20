@@ -1,0 +1,142 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="using:TrenningDemka.ViewModels"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        x:Class="TrenningDemka.Views.OrdersView"
+        x:DataType="vm:OrdersViewModel"
+        xmlns:converters="using:TrenningDemka.Converters">
+
+
+       
+
+
+    <UserControl.Resources>
+        <converters:ImageConvert x:Key="ImgConv"/>
+        <converters:ColorConverter x:Key="ColorConv"/>
+    </UserControl.Resources>
+
+    <Grid RowDefinitions="Auto,*, 50">
+        <TextBlock Grid.Row="0" Text="{Binding PageTitle}"
+                FontSize="16"
+                FontWeight="SemiBold"
+                Padding="10, 5"
+                HorizontalAlignment="Center"/>
+    <ScrollViewer Grid.Row="1">
+        <ItemsControl ItemsSource="{Binding OrderDetails}">
+        <ItemsControl.ItemTemplate >
+            <DataTemplate>
+            <Border BorderBrush="#666"
+            BorderThickness="1">
+            <Grid RowDefinitions="Auto, *">
+                
+            <Border Grid.Row="0" BorderBrush="#666"
+                BorderThickness="1"
+                Padding="5">
+                    <Grid ColumnDefinitions="*,*">
+                        <StackPanel Grid.Column="0" HorizontalAlignment="Center">
+                           <TextBlock Text="{Binding Date, StringFormat='Order for {0}'}"></TextBlock>
+                           <TextBlock Text="{Binding User.FullName}"></TextBlock>
+                        </StackPanel>
+                        <StackPanel Grid.Column="1" HorizontalAlignment="Center">
+                            <Button Foreground="OrangeRed" Command="{Binding $parent[ItemsControl].DataContext.DeleteOrderCommand}"
+                            CommandParameter ="{Binding}">
+                                <TextBlock Text="Delete"></TextBlock>
+                            </Button>
+                        </StackPanel>
+                    </Grid>
+                    
+                </Border>
+                
+             
+
+                <ItemsControl ItemsSource="{Binding OrdersProducts}" Grid.Row="1">
+                    <ItemsControl.ItemTemplate>
+                        <DataTemplate>
+                            <Border Grid.Row="0" BorderBrush="#666"
+                                BorderThickness="1"
+                                Padding="5">
+                                <Grid ColumnDefinitions="120,*" Grid.Row="1">
+                    <Image Source="{Binding Product.Image, Converter={StaticResource ImgConv}}"
+                        Grid.Column="0"
+                        Height="100"
+                        Width="100"/>
+                    <Grid Grid.Column="1" RowDefinitions="30,*">
+                        <StackPanel Orientation="Horizontal"
+                        VerticalAlignment="Center"
+                        HorizontalAlignment="Center"
+                        Grid.Row="0">
+                            <TextBlock Text="{Binding Product.Name}"
+                                Foreground="Black"/>
+                            <TextBlock Text=" | " Padding="10 5" Foreground="Black"/>
+                            <TextBlock Text="{Binding Product.Manufacture.Manufacture}"
+                                Foreground="Black"/>
+                        </StackPanel>
+                        <StackPanel Grid.Row="1" Orientation="Horizontal" Spacing="100">
+                            <StackPanel Spacing="3" HorizontalAlignment="Left">
+                                <TextBlock Text="{Binding Product.Category.Category1}"
+                                Foreground="Black"
+                                Padding="0 20 0 0"/>
+                            
+                                <TextBlock Text="{Binding Product.Structure}"
+                                Width="400"
+                                TextWrapping="Wrap"
+                                Foreground="Black"/>
+                            </StackPanel>
+                            <StackPanel Spacing="10" HorizontalAlignment="Right">
+                                <TextBlock VerticalAlignment="Center"
+                                    FontSize="16"
+                                    FontWeight="SemiBold"
+                                    TextDecorations="Strikethrough"
+                                    Foreground="Gray"
+                                    IsVisible="{Binding Product.HasDiscount}"
+                                    Text="{Binding Product.Cost}" Padding="0 20 0 0"/>
+                                <TextBlock VerticalAlignment="Center"
+                                    FontSize="16"
+                                    FontWeight="SemiBold"
+                                    Foreground="Red"
+                                    IsVisible="{Binding Product.HasDiscount}"
+                                    Text="{Binding Product.NewCost}" Padding="0 20 0 0"/>
+                                <TextBlock VerticalAlignment="Center"
+                                    FontSize="16"
+                                    FontWeight="SemiBold"
+                                    Foreground="Black"
+                                    IsVisible="{Binding !Product.HasDiscount}"
+                                    Text="{Binding Product.Cost}" Padding="0 20 0 0"/>
+                                <TextBlock VerticalAlignment="Center"
+                                    FontSize="14"
+                                    FontWeight="SemiBold"
+                                    Foreground="Black"
+                                    Text="{Binding Quantity, StringFormat='Selected quantity: {0}'}" Padding="0 20 0 0"/>
+                            </StackPanel>
+                        </StackPanel>
+                    
+                    </Grid>
+                
+            </Grid>
+                            </Border>
+                                
+                        </DataTemplate>
+                    </ItemsControl.ItemTemplate>
+                </ItemsControl>
+                
+
+            </Grid>
+            
+            
+                
+            </Border>
+        </DataTemplate>
+        </ItemsControl.ItemTemplate>
+        
+    </ItemsControl>
+    </ScrollViewer>
+
+    </Grid>
+        
+   
+   
+
+</UserControl>
+

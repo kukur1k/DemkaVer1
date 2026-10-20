@@ -36,6 +36,9 @@ namespace TrenningDemka.ViewModels
         public void GoToBasket() => CurrentPage = new BasketViewModel(this);
 
         [RelayCommand]
+        public void GoToOrders() => CurrentPage = new OrdersViewModel(this);
+
+        [RelayCommand]
         public void GoToOrderDetail(Product product) => CurrentPage = new OrderDetailsViewModel(this, product);
 
         [RelayCommand]
