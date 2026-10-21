@@ -14,7 +14,7 @@ namespace TrenningDemka.ViewModels
     {
         private readonly MainWindowViewModel _main;
 
-        public override string PageTitle => "Orders list";
+        public override string PageTitle => "Orders list"; 
 
         public OrdersViewModel(MainWindowViewModel main)
         {
@@ -38,6 +38,19 @@ namespace TrenningDemka.ViewModels
             
         }
 
+        [RelayCommand]
+        public void EditDate(Order order)
+        {
+            if (order.newDate != null)
+            {
+                order.Date = DateOnly.FromDateTime(order.newDate.Value.DateTime);
+            }
+            _main.db.SaveChanges();
+            LoadOrders();
+            
+        }
+
+
         private void LoadOrders()
         {
             var orders = _main.db.Orders
@@ -50,6 +63,7 @@ namespace TrenningDemka.ViewModels
             OrderDetails = new ObservableCollection<Order>(orders);
 
         }    
+
 
     }
 }

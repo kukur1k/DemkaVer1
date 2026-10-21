@@ -3,24 +3,16 @@
   "WorkspaceRootPath": "C:\\\u0444\u0430\u0439\u043B\u044B \u0438 \u043F\u0440\u043E\u0447\u0435\u0435\\DemoExTrenning\\ver1\\TrenningDemka\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{63456FC2-6813-417A-A9BF-BE0FFEF84405}|TrenningDemka\\TrenningDemka.csproj|c:\\\u0444\u0430\u0439\u043B\u044B \u0438 \u043F\u0440\u043E\u0447\u0435\u0435\\demoextrenning\\ver1\\trenningdemka\\trenningdemka\\viewmodels\\ordersviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{63456FC2-6813-417A-A9BF-BE0FFEF84405}|TrenningDemka\\TrenningDemka.csproj|solutionrelative:trenningdemka\\viewmodels\\ordersviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{63456FC2-6813-417A-A9BF-BE0FFEF84405}|TrenningDemka\\TrenningDemka.csproj|c:\\\u0444\u0430\u0439\u043B\u044B \u0438 \u043F\u0440\u043E\u0447\u0435\u0435\\demoextrenning\\ver1\\trenningdemka\\trenningdemka\\models\\ordersproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{63456FC2-6813-417A-A9BF-BE0FFEF84405}|TrenningDemka\\TrenningDemka.csproj|solutionrelative:trenningdemka\\models\\ordersproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{63456FC2-6813-417A-A9BF-BE0FFEF84405}|TrenningDemka\\TrenningDemka.csproj|c:\\\u0444\u0430\u0439\u043B\u044B \u0438 \u043F\u0440\u043E\u0447\u0435\u0435\\demoextrenning\\ver1\\trenningdemka\\trenningdemka\\models\\addingorderparts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{63456FC2-6813-417A-A9BF-BE0FFEF84405}|TrenningDemka\\TrenningDemka.csproj|solutionrelative:trenningdemka\\models\\addingorderparts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{63456FC2-6813-417A-A9BF-BE0FFEF84405}|TrenningDemka\\TrenningDemka.csproj|c:\\\u0444\u0430\u0439\u043B\u044B \u0438 \u043F\u0440\u043E\u0447\u0435\u0435\\demoextrenning\\ver1\\trenningdemka\\trenningdemka\\views\\ordersview.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}",
       "RelativeMoniker": "D:0:0:{63456FC2-6813-417A-A9BF-BE0FFEF84405}|TrenningDemka\\TrenningDemka.csproj|solutionrelative:trenningdemka\\views\\ordersview.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{63456FC2-6813-417A-A9BF-BE0FFEF84405}|TrenningDemka\\TrenningDemka.csproj|c:\\\u0444\u0430\u0439\u043B\u044B \u0438 \u043F\u0440\u043E\u0447\u0435\u0435\\demoextrenning\\ver1\\trenningdemka\\trenningdemka\\models\\addinguserparts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{63456FC2-6813-417A-A9BF-BE0FFEF84405}|TrenningDemka\\TrenningDemka.csproj|solutionrelative:trenningdemka\\models\\addinguserparts.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{63456FC2-6813-417A-A9BF-BE0FFEF84405}|TrenningDemka\\TrenningDemka.csproj|c:\\\u0444\u0430\u0439\u043B\u044B \u0438 \u043F\u0440\u043E\u0447\u0435\u0435\\demoextrenning\\ver1\\trenningdemka\\trenningdemka\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{63456FC2-6813-417A-A9BF-BE0FFEF84405}|TrenningDemka\\TrenningDemka.csproj|solutionrelative:trenningdemka\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{63456FC2-6813-417A-A9BF-BE0FFEF84405}|TrenningDemka\\TrenningDemka.csproj|c:\\\u0444\u0430\u0439\u043B\u044B \u0438 \u043F\u0440\u043E\u0447\u0435\u0435\\demoextrenning\\ver1\\trenningdemka\\trenningdemka\\viewmodels\\ordersviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{63456FC2-6813-417A-A9BF-BE0FFEF84405}|TrenningDemka\\TrenningDemka.csproj|solutionrelative:trenningdemka\\viewmodels\\ordersviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,12 +22,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 3,
           "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
@@ -50,59 +38,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "AddingUserParts.cs",
-              "DocumentMoniker": "C:\\\u0444\u0430\u0439\u043B\u044B \u0438 \u043F\u0440\u043E\u0447\u0435\u0435\\DemoExTrenning\\ver1\\TrenningDemka\\TrenningDemka\\Models\\AddingUserParts.cs",
-              "RelativeDocumentMoniker": "TrenningDemka\\Models\\AddingUserParts.cs",
-              "ToolTip": "C:\\\u0444\u0430\u0439\u043B\u044B \u0438 \u043F\u0440\u043E\u0447\u0435\u0435\\DemoExTrenning\\ver1\\TrenningDemka\\TrenningDemka\\Models\\AddingUserParts.cs",
-              "RelativeToolTip": "TrenningDemka\\Models\\AddingUserParts.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "AddingOrderParts.cs",
+              "DocumentMoniker": "C:\\\u0444\u0430\u0439\u043B\u044B \u0438 \u043F\u0440\u043E\u0447\u0435\u0435\\DemoExTrenning\\ver1\\TrenningDemka\\TrenningDemka\\Models\\AddingOrderParts.cs",
+              "RelativeDocumentMoniker": "TrenningDemka\\Models\\AddingOrderParts.cs",
+              "ToolTip": "C:\\\u0444\u0430\u0439\u043B\u044B \u0438 \u043F\u0440\u043E\u0447\u0435\u0435\\DemoExTrenning\\ver1\\TrenningDemka\\TrenningDemka\\Models\\AddingOrderParts.cs",
+              "RelativeToolTip": "TrenningDemka\\Models\\AddingOrderParts.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-20T09:48:17.007Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Product.cs",
-              "DocumentMoniker": "C:\\\u0444\u0430\u0439\u043B\u044B \u0438 \u043F\u0440\u043E\u0447\u0435\u0435\\DemoExTrenning\\ver1\\TrenningDemka\\TrenningDemka\\Models\\Product.cs",
-              "RelativeDocumentMoniker": "TrenningDemka\\Models\\Product.cs",
-              "ToolTip": "C:\\\u0444\u0430\u0439\u043B\u044B \u0438 \u043F\u0440\u043E\u0447\u0435\u0435\\DemoExTrenning\\ver1\\TrenningDemka\\TrenningDemka\\Models\\Product.cs",
-              "RelativeToolTip": "TrenningDemka\\Models\\Product.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAA5wAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-20T09:43:41.881Z",
+              "WhenOpened": "2026-10-21T13:07:39.058Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "OrdersProduct.cs",
-              "DocumentMoniker": "C:\\\u0444\u0430\u0439\u043B\u044B \u0438 \u043F\u0440\u043E\u0447\u0435\u0435\\DemoExTrenning\\ver1\\TrenningDemka\\TrenningDemka\\Models\\OrdersProduct.cs",
-              "RelativeDocumentMoniker": "TrenningDemka\\Models\\OrdersProduct.cs",
-              "ToolTip": "C:\\\u0444\u0430\u0439\u043B\u044B \u0438 \u043F\u0440\u043E\u0447\u0435\u0435\\DemoExTrenning\\ver1\\TrenningDemka\\TrenningDemka\\Models\\OrdersProduct.cs",
-              "RelativeToolTip": "TrenningDemka\\Models\\OrdersProduct.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-20T09:34:51.686Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "OrdersViewModel.cs",
-              "DocumentMoniker": "C:\\\u0444\u0430\u0439\u043B\u044B \u0438 \u043F\u0440\u043E\u0447\u0435\u0435\\DemoExTrenning\\ver1\\TrenningDemka\\TrenningDemka\\ViewModels\\OrdersViewModel.cs",
-              "RelativeDocumentMoniker": "TrenningDemka\\ViewModels\\OrdersViewModel.cs",
-              "ToolTip": "C:\\\u0444\u0430\u0439\u043B\u044B \u0438 \u043F\u0440\u043E\u0447\u0435\u0435\\DemoExTrenning\\ver1\\TrenningDemka\\TrenningDemka\\ViewModels\\OrdersViewModel.cs",
-              "RelativeToolTip": "TrenningDemka\\ViewModels\\OrdersViewModel.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAA1wCYAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-10-20T09:04:46.787Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
               "Title": "OrdersView.axaml",
               "DocumentMoniker": "C:\\\u0444\u0430\u0439\u043B\u044B \u0438 \u043F\u0440\u043E\u0447\u0435\u0435\\DemoExTrenning\\ver1\\TrenningDemka\\TrenningDemka\\Views\\OrdersView.axaml",
               "RelativeDocumentMoniker": "TrenningDemka\\Views\\OrdersView.axaml",
@@ -110,6 +59,19 @@
               "RelativeToolTip": "TrenningDemka\\Views\\OrdersView.axaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2026-10-20T05:28:02.986Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "OrdersViewModel.cs",
+              "DocumentMoniker": "C:\\\u0444\u0430\u0439\u043B\u044B \u0438 \u043F\u0440\u043E\u0447\u0435\u0435\\DemoExTrenning\\ver1\\TrenningDemka\\TrenningDemka\\ViewModels\\OrdersViewModel.cs",
+              "RelativeDocumentMoniker": "TrenningDemka\\ViewModels\\OrdersViewModel.cs",
+              "ToolTip": "C:\\\u0444\u0430\u0439\u043B\u044B \u0438 \u043F\u0440\u043E\u0447\u0435\u0435\\DemoExTrenning\\ver1\\TrenningDemka\\TrenningDemka\\ViewModels\\OrdersViewModel.cs",
+              "RelativeToolTip": "TrenningDemka\\ViewModels\\OrdersViewModel.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAApwC4AAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-20T09:04:46.787Z",
               "EditorCaption": ""
             }
           ]

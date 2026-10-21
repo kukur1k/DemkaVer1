@@ -39,10 +39,17 @@
                            <TextBlock Text="{Binding Date, StringFormat='Order for {0}'}"></TextBlock>
                            <TextBlock Text="{Binding User.FullName}"></TextBlock>
                         </StackPanel>
-                        <StackPanel Grid.Column="1" HorizontalAlignment="Center">
-                            <Button Foreground="OrangeRed" Command="{Binding $parent[ItemsControl].DataContext.DeleteOrderCommand}"
+                        <StackPanel Grid.Column="1" HorizontalAlignment="Center" Orientation="Horizontal">
+                            <Button Background="OrangeRed" Foreground="White" Command="{Binding $parent[ItemsControl].DataContext.DeleteOrderCommand}"
                             CommandParameter ="{Binding}">
                                 <TextBlock Text="Delete"></TextBlock>
+                            </Button>
+                            
+                            <DatePicker SelectedDate="{Binding newDate}"></DatePicker>
+
+                            <Button Background="Blue" Foreground="White" Command="{Binding $parent[ItemsControl].DataContext.EditDateCommand}"
+                            CommandParameter ="{Binding}">
+                                <TextBlock Text="Edit Date"></TextBlock>
                             </Button>
                         </StackPanel>
                     </Grid>
