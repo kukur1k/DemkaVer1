@@ -14,7 +14,7 @@ namespace TrenningDemka.Converters
         public object? Convert(object? value, Type targetType, object? parameter, CultureInfo culture)
         {
             if (value is int count && count <= 3) {
-                return new SolidColorBrush(uint.Parse("FFF08080", NumberStyles.HexNumber));
+                return new SolidColorBrush(Color.Parse("#FF8080"));
             }
             else
             {
