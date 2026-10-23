@@ -1,4 +1,4 @@
-<UserControl xmlns="https://github.com/avaloniaui"
+﻿<UserControl xmlns="https://github.com/avaloniaui"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:vm="using:TrenningDemka.ViewModels"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
@@ -8,7 +8,9 @@
         x:DataType="vm:OrdersViewModel"
         xmlns:converters="using:TrenningDemka.Converters">
 
-
+    <!--
+        
+    -->
        
 
 
@@ -116,6 +118,9 @@
                                     FontWeight="SemiBold"
                                     Foreground="Black"
                                     Text="{Binding Quantity, StringFormat='Selected quantity: {0}'}" Padding="0 20 0 0"/>
+                                <Button Command="{Binding $parent[UserControl].DataContext.DeleteOrdersItemCommand}" CommandParameter="{Binding}">
+                                    <TextBlock Text="❌"></TextBlock>
+                                </Button>
                             </StackPanel>
                         </StackPanel>
                     

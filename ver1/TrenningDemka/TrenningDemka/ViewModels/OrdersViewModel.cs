@@ -1,4 +1,5 @@
-﻿using CommunityToolkit.Mvvm.ComponentModel;
+﻿using Avalonia.Controls;
+using CommunityToolkit.Mvvm.ComponentModel;
 using CommunityToolkit.Mvvm.Input;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -39,6 +40,26 @@ namespace TrenningDemka.ViewModels
         }
 
         [RelayCommand]
+        public void DeleteOrdersItem(OrdersProduct item)
+        {
+            var order = _main.db.Orders.Where(x => x.Id == item.OrderId).FirstOrDefault();
+            _main.db.OrdersProducts.Remove(item);
+
+            _main.db.SaveChanges();
+            LoadOrders();
+
+            var count = _main.db.OrdersProducts.Count(x => x.OrderId == order.Id);
+            if (count == 0)
+            {
+                _main.db.Orders.Remove(order);
+            }
+
+            _main.db.SaveChanges();
+            LoadOrders();
+        }
+
+
+        [RelayCommand]
         public void EditDate(Order order)
         {
             if (order.newDate != null)
@@ -50,7 +71,7 @@ namespace TrenningDemka.ViewModels
             
         }
 
-
+       
         private void LoadOrders()
         {
             var orders = _main.db.Orders
